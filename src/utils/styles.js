@@ -8,11 +8,29 @@ export default globalStyles = StyleSheet.create({
       alignItems: 'center',
       backgroundColor: '#F5FCFF',
     },
-    welcome: {
+    headerOne: {
+      fontFamily: 'BGFlame',
+      color: colours.white,
+      fontSize: 20,
+      textAlign: 'center',
+    },
+    headerTwo: {
+      fontFamily: 'BGFlame',
+      color: colours.white,
+      fontSize: 14,
+      textAlign: 'center',
+    },
+    mainText: {
       fontFamily: 'BGFlame',
       color: colours.bgSlate,
       fontSize: 20,
       textAlign: 'center',
-      margin: 10,
     },
+    Header: {
+      height: 100,
+      backgroundColor: colours.bgDarkBlue,
+      justifyContent: 'center',
+      alignItems: 'center',
+      paddingTop: 15,
+    }
   });
