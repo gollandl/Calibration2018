@@ -1,5 +1,8 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 import colours from './colours';
+
+let { width } = Dimensions.get('window');
+let { height } = Dimensions.get('window');
 
 export default globalStyles = StyleSheet.create({
     container: {
@@ -11,7 +14,7 @@ export default globalStyles = StyleSheet.create({
     headerOne: {
       fontFamily: 'BGFlame',
       color: colours.white,
-      fontSize: 20,
+      fontSize: 16,
       textAlign: 'center',
     },
     headerTwo: {
@@ -26,11 +29,19 @@ export default globalStyles = StyleSheet.create({
       fontSize: 20,
       textAlign: 'center',
     },
-    Header: {
-      height: 100,
+    header: {
+      width: width,
+      paddingTop: 20,
+      paddingLeft: 15,
+      paddingRight: 15,
       backgroundColor: colours.bgDarkBlue,
-      justifyContent: 'center',
+      height: 80,
+      justifyContent: 'space-between',
+      flexDirection: 'row',
       alignItems: 'center',
-      paddingTop: 15,
-    }
+    },
+    headerLeft: {
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+    },
   });

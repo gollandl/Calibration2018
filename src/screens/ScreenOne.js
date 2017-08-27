@@ -14,7 +14,7 @@ export default class ScreenOne extends Component {
     return (
       <View style={globalStyles.container}>
         <Text style={globalStyles.mainText}>
-          Welcome to React Native!
+            Front Page!
         </Text>
         <Button title='Navigate' onPress={() => navigation.dispatch(navigateToRoute(routes.MAINTWO))} />
       </View>

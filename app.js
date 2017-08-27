@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { View, StatusBar } from 'react-native';
 import { Provider } from 'react-redux';
-import NavigatorWithState from './src/navigation/NavigatorWithState';
 import store from './src/store';
-import Header from './src/components/header';
+import NavigatorWithState from './src/navigation/NavigatorWithState';
 
 export default class App extends Component {
   render() {
     return (
         <Provider store={store}>
           <View style={{ flex: 1 }}>
-            <Header />
+            <StatusBar barStyle="light-content" />
             <NavigatorWithState />
           </View>
         </Provider>

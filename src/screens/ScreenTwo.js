@@ -9,8 +9,8 @@ export default class ScreenTwo extends Component {
   render() {
     return (
       <View style={globalStyles.container}>
-        <Text style={globalStyles.welcome}>
-          Welcome to React Native!
+        <Text style={globalStyles.mainText}>
+          Page Two!
         </Text>
       </View>
     );
